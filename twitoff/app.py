@@ -1,12 +1,13 @@
+from flask import Flask, render_template
 
-from flask import Flask
+app = Flask(__name__)
 
-def create_app():
-	"""Create and configure an instance of the Flask app"""
-	app = Flask(__name__)
-	
-	@app.route('/')
-	def root():
-		return 'Hello Twitoff!'
+@app.route('/')
+def hello_world():
+	return render_template('base.html', title='Home')
 
-	return app
+app_title = "Twitoff DS38"
+
+@app.route('/test')
+def test():
+	return f"<p>This is a page for {app_title}<p>"
