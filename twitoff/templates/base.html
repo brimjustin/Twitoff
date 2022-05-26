@@ -20,8 +20,8 @@
       {% block content %}
       <div>
           <h1>{{ title }}</h1>
-          <form> action="/compare" method="post">
-            <select> name="user0">
+          <form action="/compare" method="post">
+            <select name="user0">
                 {% for user in users %}
                 <option value="{{ user.username }}">{{ user.username }}</option>
                 {% endfor %}

@@ -25,8 +25,8 @@ def create_app():
 		DB.create_all()
 		return """The database has been reset
 		<a href='/'>Go to Home</a>
-		<a href='/reset'>Go to Reset</a>
-		<a href='populate'>Go to Populate</a>
+		<a href='/reset'>Go to reset</a>
+		<a href='/populate'>Go to populate</a>
 		"""
 
 	@app.route("/populate")
@@ -45,8 +45,8 @@ def create_app():
 		DB.session.commit()
 		return """The database has been reset
 		<a href='/'>Go to Home</a>
-		<a href='/reset'>Go to Reset</a>
-		<a href='populate'>Go to Populate</a>
+		<a href='/reset'>Go to reset</a>
+		<a href='/populate'>Go to populate</a>
 		"""
 	
 	@app.route('/update')
