@@ -11,6 +11,7 @@ python-dotenv = "*"
 scikit-learn = "*"
 sklearn = "*"
 jinja2 = "*"
+gunicorn = "*"
 
 [dev-packages]
 
