@@ -10,6 +10,7 @@ spacy = "*"
 python-dotenv = "*"
 scikit-learn = "*"
 sklearn = "*"
+jinja2 = "*"
 
 [dev-packages]
 
