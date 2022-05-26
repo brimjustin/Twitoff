@@ -27,4 +27,3 @@ def predict_user(username0, username1, hypo_tweet_text):
     hypo_tweet_vector = vectorize_tweet(hypo_tweet_text)
 
     return log_reg.predict(hypo_tweet_vector.reshape(1, -1))
-    
